@@ -43,7 +43,7 @@ namespace MoreSeamothUpgrades.MonoBehaviours
 
         public const float drillDamage = 5f;
 
-        public const float maxHealth = 200f;
+        public const float maxHealth = 50f;
 
         public float timeLastDrilled;
 
@@ -65,7 +65,7 @@ namespace MoreSeamothUpgrades.MonoBehaviours
                 health = new float[renderers.Length];
                 for (int i = 0; i < health.Length; i++)
                 {
-                    health[i] = 200f;
+                    health[i] = 50f;
                 }
             }
             else
@@ -82,7 +82,7 @@ namespace MoreSeamothUpgrades.MonoBehaviours
                         }
                         else
                         {
-                            health[j] = 200f;
+                            health[j] = 50f;
                         }
                     }
                 }
@@ -167,7 +167,7 @@ namespace MoreSeamothUpgrades.MonoBehaviours
         {
             for (int i = 0; i < health.Length; i++)
             {
-                health[i] = 200f;
+                health[i] = 50f;
                 renderers[i].gameObject.SetActive(true);
             }
         }
